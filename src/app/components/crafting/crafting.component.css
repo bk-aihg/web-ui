@@ -1,0 +1,107 @@
+.crafting{
+  display: flex; 
+  flex-wrap: wrap;
+  padding-top: 25px; 
+  margin-left: 100px;
+  margin-right: 100px;
+  align-content: center;
+  height: auto;
+}	
+
+.node{
+  display: inline-block;
+  margin-right: 1em;
+  margin-top: 25px; 
+  height: 50px;
+  width: 370px;
+  cursor: pointer;
+  border: 10px solid black;
+  box-shadow: 0px -1px 8px 4px;
+}
+
+.childNode{
+  margin-top: 5px;
+  margin-left: 10px;
+  height: 50px;
+  width: 340px;
+  border: 10px solid black;
+  box-shadow: 0px -1px 8px 4px;
+}
+
+
+.name{
+	padding-left: 10px;
+	color: #ffffff;
+}
+
+.number{
+	float: right;
+	padding-right: 40px;
+	color: #ffffff;
+}
+
+.craftImg {
+	width: 25px;
+	height: 25px;
+}
+
+.hideChildren>div{
+   display: none;
+}
+
+
+
+/*CSS Media Queries for Mobile Phones and Tablet*/
+@media only screen and (max-width: 600px){
+  .crafting{
+    display: block; 
+    margin: 20px;
+    height: auto;
+    padding-top: 0px; 
+  }	
+
+  .node{
+    display: inline-block;
+    margin-top: 25px; 
+    height: 50px;
+    width: 300px;
+    cursor: pointer;
+    border: 10px solid black;
+    box-shadow: 0px -1px 8px 4px;
+  }
+
+  .childNode{
+    margin-top: 25px;
+    margin-left: 10px;
+    height: 50px;
+    width: 270px;	
+    order: 10px solid black;
+    box-shadow: 0px -1px 8px 4px;
+  }
+
+  .name{
+    padding-left: 10px;
+    color: #ffffff;
+  }
+
+  .number{
+    float: right;
+    padding-right: 40px;
+    color: #ffffff;
+  }
+
+  .craftImg {
+    width: 25px;
+    height: 25px;
+  }
+
+}
+
+.header-home-image{
+  padding-top: 30px;
+  padding-left: 40px;
+  width: 80px;
+  background: none;
+  cursor: pointer;
+  color: orange;
+}

@@ -1,0 +1,146 @@
+.blog{
+  display: grid;
+  padding-top: 25px; 
+  margin-left: 200px;
+  margin-right: 100px;
+  align-content: center;
+  height: auto;
+  border: white;
+}
+
+.blogNode{
+  display: inline-flex;
+  margin-right: 1em;
+  margin-top: 25px; 
+  height: auto;
+  width: 1000px;
+  cursor: pointer;
+  border: 10px solid black;
+  box-shadow: 0px -1px 8px 4px;
+	
+}
+
+.blogChildNode{
+  margin-top: 5px;
+  margin-left: 10px;
+  height: auto;
+  width: 970px;
+  border: 10px solid black;
+  box-shadow: 0px -1px 8px 4px;
+}
+
+.commentNode{
+  display: inline-flex;
+  margin-right: 1em;
+  margin-top: 15px;
+  margin-left: 20px;
+  height: auto;
+  width: 870px;
+  cursor: pointer;
+  border: 10px solid black;
+  box-shadow: 0px -1px 8px 4px;
+  height: auto;
+
+}
+
+.commentChildNode{
+  margin-top: 5px;
+  margin-left: 20px;
+  height: auto;
+  width: 770px;
+  border: 10px solid black;
+  box-shadow: 0px -1px 8px 4px;
+}
+
+.name{
+  padding-left: 10px;
+  color: white;
+}
+
+.author{
+  padding-left: 10px;
+  color: white;
+  width: 300px;
+}
+
+.createDate{
+  padding-left: 10px;
+  color: white;
+}
+
+.description{
+  float: left;
+  height: auto;
+  padding-left: 40px;
+  color: white;
+}
+
+.column{
+  width: 33.33%;
+}
+
+.addBlogImage{
+  float: right;
+  padding-right: 20px;
+  color: orange;
+}
+
+
+
+.addBlog{
+  float: left;
+  left: 30%;
+  height: auto;
+}
+
+.addBlog-input-box{
+  font-color: white;
+  padding-left: 30px;
+  padding-top: 150px;
+  height: auto;
+}
+
+.addBlog-form{
+  padding-top: 20px;
+  margin-bottom: 20px;
+  .label{
+     color: white
+  }
+  .input{
+    float: right;
+      margin-right: 350px;
+      background-color: grey;
+      border: none;
+  }
+  .submit{
+    float: right;
+    text-align: center;
+    margin-right: 350px;
+    background-color: orange;
+    border: none;
+    width: 170px;
+    cursor: pointer;
+  }
+  .cancel{
+    float: right;
+    text-align: center;
+    margin-right: 350px;
+    background-color: orange;
+    border: none;
+    width: 170px;
+    cursor: pointer;
+  }
+}
+
+.hideChildren>div{
+   display: none;
+}
+
+.header-home-image{
+  padding-top: 30px;
+  padding-left: 40px;
+  width: 80px;
+  background: none;
+  cursor: pointer;
+  color: orange;
+}

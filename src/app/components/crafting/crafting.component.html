@@ -1,0 +1,19 @@
+<div class="col-sm-12">
+  <a href="/home">
+    <i class="fa fa-home fa-3x header-home-image" aria-hidden="true"></i>
+  </a>
+</div>
+<div id="crafting" class="crafting col-sm-12">
+  <div *ngFor="let item of items" aria-label="crafting" id="parent-{{item.itemId}}" style="height:auto;" class="node"
+    (click)="ele.class = ele.class == 'showChildren' ? '' :  'showChildren'"
+    [ngClass]="{ hideChildren : ele.class !== 'showChildren' }" #ele>
+    <img class="craftImg" src="assets/images/{{item.image}}">
+    <span class="name">{{item.name}}</span>
+    <span class="number">{{item.number}}</span>
+    <div *ngFor="let child of item.need" id="child-{{child.itemId}}" class="childNode">
+      <img class="craftImg" src="assets/images/{{child.image}}">
+      <span class="name">{{child.name}}</span>
+      <span class="number">{{child.number}}</span>
+    </div>
+  </div>
+</div>	

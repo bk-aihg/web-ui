@@ -1,1 +1,14 @@
-<p>home works!</p>
+<div class="main-page-body-title">
+    <h1>Minecraft Guide</h1>
+    <h5>version 1.0</h5>
+  </div>
+  <div class="main-body">
+    <div id="main-page-body-content" class="main-page-body-content col-sm-12">
+      <div *ngFor="let nav of navigation" id="{{nav.id}}" class="main-body-widget" aria-label="Main Body Thumbnail Image">
+        <a routerLink="/{{nav.router}}">
+          <img class="thumbnailImg" src="assets/images/{{nav.image}}">
+          <div class="thumbnailTxt">{{nav.name}}</div>
+        </a>
+      </div>
+    </div>
+  </div>
