@@ -11,7 +11,11 @@ Blog - Blog page provides users to create blogs and collaborated with other user
 ## Architecture Details
 
 UI Framework - Angular
+
 Backend Framework - Symfony
+
 Web Server - Nginx
+
 App Server - Php-Fpm
+
 Hosting - AWS
