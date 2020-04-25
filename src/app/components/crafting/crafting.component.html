@@ -4,13 +4,13 @@
   </a>
 </div>
 <div id="crafting" class="crafting col-sm-12">
-  <div *ngFor="let item of items" aria-label="crafting" id="parent-{{item.itemId}}" style="height:auto;" class="node"
+  <div *ngFor="let item of items" aria-label="crafting" id="parent-{{item.itemId}}" style="height:auto;" class="node col-md-3"
     (click)="ele.class = ele.class == 'showChildren' ? '' :  'showChildren'"
     [ngClass]="{ hideChildren : ele.class !== 'showChildren' }" #ele>
     <img class="craftImg" src="assets/images/{{item.image}}">
     <span class="name">{{item.name}}</span>
     <span class="number">{{item.number}}</span>
-    <div *ngFor="let child of item.need" id="child-{{child.itemId}}" class="childNode">
+    <div *ngFor="let child of item.need" id="child-{{child.itemId}}" class="childNode col-md-12">
       <img class="craftImg" src="assets/images/{{child.image}}">
       <span class="name">{{child.name}}</span>
       <span class="number">{{child.number}}</span>

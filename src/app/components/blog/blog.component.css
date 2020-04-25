@@ -1,19 +1,19 @@
 .blog{
   display: grid;
-  padding-top: 25px; 
-  margin-left: 200px;
-  margin-right: 100px;
+  padding-top: 20px; 
+  margin-left: 20px;
+  margin-right: 20px;
   align-content: center;
   height: auto;
   border: white;
 }
 
 .blogNode{
-  display: inline-flex;
+  display: grid;
   margin-right: 1em;
-  margin-top: 25px; 
-  height: auto;
-  width: 1000px;
+  margin-top: 25px;
+  margin-left: 10px; 
+  height: auto;;
   cursor: pointer;
   border: 10px solid black;
   box-shadow: 0px -1px 8px 4px;
@@ -23,19 +23,17 @@
 .blogChildNode{
   margin-top: 5px;
   margin-left: 10px;
-  height: auto;
-  width: 970px;
+  height: auto;;
   border: 10px solid black;
   box-shadow: 0px -1px 8px 4px;
 }
 
 .commentNode{
-  display: inline-flex;
+  display: grid;
   margin-right: 1em;
   margin-top: 15px;
   margin-left: 20px;
   height: auto;
-  width: 870px;
   cursor: pointer;
   border: 10px solid black;
   box-shadow: 0px -1px 8px 4px;
@@ -47,7 +45,6 @@
   margin-top: 5px;
   margin-left: 20px;
   height: auto;
-  width: 770px;
   border: 10px solid black;
   box-shadow: 0px -1px 8px 4px;
 }
